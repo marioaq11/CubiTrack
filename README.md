@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📦 CubiTrack
+# CubiTrack
 
 ### Smart Pallet Cubing & Load Optimization System
 
@@ -17,7 +17,7 @@ Optimize pallet loading. Reduce wasted space. Improve logistics.
 
 ---
 
-# 📖 Overview
+# Overview
 
 CubiTrack is a full-stack web application designed to optimize pallet loading by simulating how boxes fit on different pallet configurations.
 
@@ -27,7 +27,7 @@ The project is being developed as a portfolio application following modern softw
 
 ---
 
-# 🎯 Problem Statement
+# Problem Statement
 
 Many warehouses and logistics operations still perform pallet cubing calculations manually or using spreadsheets.
 
@@ -43,9 +43,9 @@ CubiTrack aims to automate these calculations and provide quick, reliable loadin
 
 ---
 
-# ✨ Planned Features
+# Planned Features
 
-## 📦 Box Management
+## Box Management
 
 - Create boxes
 - Edit boxes
@@ -55,7 +55,7 @@ CubiTrack aims to automate these calculations and provide quick, reliable loadin
 
 ---
 
-## 🪵 Pallet Management
+## Pallet Management
 
 - Create pallets
 - Edit pallets
@@ -64,7 +64,7 @@ CubiTrack aims to automate these calculations and provide quick, reliable loadin
 
 ---
 
-## 📐 Cubing Simulation
+## Cubing Simulation
 
 - Calculate boxes per layer
 - Calculate total layers
@@ -76,13 +76,13 @@ CubiTrack aims to automate these calculations and provide quick, reliable loadin
 
 ---
 
-## 🔄 Orientation Optimization
+## Orientation Optimization
 
 Automatically evaluate multiple box orientations and determine the configuration with the highest pallet utilization.
 
 ---
 
-## 📊 Dashboard
+## Dashboard
 
 - Recent simulations
 - Average pallet utilization
@@ -92,14 +92,14 @@ Automatically evaluate multiple box orientations and determine the configuration
 
 ---
 
-## 📄 Reports
+## Reports
 
 - Export to PDF
 - Export to Excel
 
 ---
 
-## 🔐 Authentication
+## Authentication
 
 - User login
 - Role-based authorization
@@ -107,7 +107,7 @@ Automatically evaluate multiple box orientations and determine the configuration
 
 ---
 
-# 🏗️ Architecture
+# Architecture
 
 The project follows a modern client-server architecture.
 
@@ -137,7 +137,7 @@ CubiTrack
 
 ---
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 ## Frontend
 
@@ -169,7 +169,7 @@ CubiTrack
 
 ---
 
-# 🚀 Roadmap
+# Roadmap
 
 ## Phase 1
 
@@ -198,7 +198,7 @@ CubiTrack
 
 ---
 
-# 📂 Repository Structure
+# Repository Structure
 
 ```text
 cubitrack/
@@ -218,7 +218,7 @@ cubitrack/
 
 ---
 
-# 🎯 Project Goals
+# Project Goals
 
 This project is intended to demonstrate knowledge in:
 
@@ -236,13 +236,13 @@ This project is intended to demonstrate knowledge in:
 
 ---
 
-# 📸 Screenshots
+# Screenshots
 
 > Coming soon...
 
 ---
 
-# 🌎 Future Improvements
+# Future Improvements
 
 - 3D pallet visualization
 - Barcode support
@@ -254,13 +254,13 @@ This project is intended to demonstrate knowledge in:
 
 ---
 
-# 🤝 Contributing
+# Contributing
 
 Contributions, suggestions, and feedback are welcome.
 
 ---
 
-# 📄 License
+# License
 
 This project is licensed under the MIT License.
 
