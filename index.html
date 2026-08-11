@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>CubiTrack</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
 </head>
 
 
@@ -17,7 +24,7 @@
         <aside class="sidebar">
 
             <div class="logo">
-                CubiTrack
+                <h1>CubiTrack</h1>
             </div>
 
             <nav>
@@ -36,11 +43,25 @@
 
             <header class="topbar">
 
-                <h1>Dashboard</h1>
+                <div>
+                    <h1>Dashboard</h1>
 
-                <span class="user">
-                    👤 User
-                </span>
+                    <p class="page-description">
+                        Monitor your pallet loading simulations
+                    </p>
+                </div>
+
+                <div class="topbar-actions">
+
+                    <button class="btn-primary">
+                        + New Simulation
+                    </button>
+
+                    <span class="user">
+                        👤 User
+                    </span>
+
+                </div>
 
             </header>
 
@@ -86,19 +107,25 @@
                         <tr>
                             <td>Customer A</td>
                             <td>120 × 100 cm</td>
-                            <td>91%</td>
+                            <td>
+                                <span class="utilization high">91%</span>
+                            </td>
                         </tr>
 
                         <tr>
                             <td>Customer B</td>
                             <td>120 × 100 cm</td>
-                            <td>87%</td>
+                            <td>
+                                <span class="utilization medium">87%</span>
+                            </td>
                         </tr>
 
                         <tr>
                             <td>Customer C</td>
                             <td>110 × 90 cm</td>
-                            <td>82%</td>
+                            <td>
+                                <span class="utilization low">82%</span>
+                            </td>
                         </tr>
 
                     </tbody>
