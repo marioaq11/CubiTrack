@@ -238,7 +238,7 @@ This project is intended to demonstrate knowledge in:
 
 # Screenshots
 
-> Coming soon...ssssssssssssssssssss
+> Coming soon...
 
 ---
 
