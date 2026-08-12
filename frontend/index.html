@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CubiTrack</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <body>
-
     <!-- Main application container -->
     <div class="app">
-
-        <!-- Sidebar -->
+        <!-- ================================
+            SIDEBAR
+        ================================= -->
         <aside class="sidebar">
             <div class="logo">
                 <h1>CubiTrack</h1>
@@ -30,8 +34,13 @@
             </nav>
         </aside>
 
-        <!-- Main content -->
+        <!-- ================================
+            MAIN CONTENT
+        ================================= -->
         <main class="main-content">
+            <!-- ================================
+                DASHBOARD HEADER
+            ================================= -->
             <header class="topbar">
                 <div>
                     <h1>Dashboard</h1>
@@ -49,7 +58,9 @@
                 </div>
             </header>
 
-            <!-- Metrics -->
+            <!-- ================================
+                METRICS
+            ================================= -->
             <section class="metrics">
                 <div class="metric-card">
                     <h2>18</h2>
@@ -65,7 +76,9 @@
                 </div>
             </section>
 
-            <!-- Recent simulations -->
+            <!-- ================================
+                RECENT SIMULATIONS
+            ================================= -->
             <section class="simulations">
                 <h2>Recent Simulations</h2>
                 <table>
@@ -81,28 +94,330 @@
                             <td>Customer A</td>
                             <td>120 × 100 cm</td>
                             <td>
-                                <span class="utilization high">91%</span>
+                                <span class="utilization high">
+                                    91%
+                                </span>
                             </td>
                         </tr>
                         <tr>
                             <td>Customer B</td>
                             <td>120 × 100 cm</td>
                             <td>
-                                <span class="utilization medium">87%</span>
+                                <span class="utilization medium">
+                                    87%
+                                </span>
                             </td>
                         </tr>
                         <tr>
                             <td>Customer C</td>
                             <td>110 × 90 cm</td>
                             <td>
-                                <span class="utilization low">82%</span>
+                                <span class="utilization low">
+                                    82%
+                                </span>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </section>
+
+            <!-- ============================================
+                NEW SIMULATION
+                this is the section we just added.
+            ============================================= -->
+            <section class="simulation-page">
+
+                <!-- Page header -->
+                <div class="page-header">
+                    <div>
+                        <h1>New Simulation</h1>
+                        <p>
+                            Enter the box and pallet dimensions
+                            to calculate pallet utilization.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ========================================
+                    SIMULATION INPUTS
+                ========================================= -->
+                <div class="simulation-grid">
+                    <!-- ================================
+                        BOX INFORMATION
+                    ================================= -->
+                    <div class="simulation-card">
+                        <h2>📦 Box Information</h2>
+                        <div class="form-grid">
+                            <!-- Box length -->
+                            <div class="form-group">
+                                <label for="boxLength">
+                                    Length (cm)
+                                </label>
+                                <input
+                                    type="number"
+                                    id="boxLength"
+                                    placeholder="Example: 27"
+                                >
+                            </div>
+
+                            <!-- Box width -->
+                            <div class="form-group">
+                                <label for="boxWidth">
+                                    Width (cm)
+                                </label>
+                                <input
+                                    type="number"
+                                    id="boxWidth"
+                                    placeholder="Example: 21"
+                                >
+                            </div>
+
+                            <!-- Box height -->
+                            <div class="form-group">
+                                <label for="boxHeight">
+                                    Height (cm)
+                                </label>
+                                <input
+                                    type="number"
+                                    id="boxHeight"
+                                    placeholder="Example: 20"
+                                >
+                            </div>
+
+                            <!-- Box weight -->
+                            <div class="form-group">
+                                <label for="boxWeight">
+                                    Weight (kg)
+                                </label>
+                                <input
+                                    type="number"
+                                    id="boxWeight"
+                                    placeholder="Example: 5.5"
+                                    step="0.01"
+                                >
+                            </div>
+
+                            <!-- Box quantity -->
+                            <div class="form-group">
+                                <label for="boxQuantity">
+                                    Quantity
+                                </label>
+                                <input
+                                    type="number"
+                                    id="boxQuantity"
+                                    placeholder="Example: 100"
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+
+<!-- ========================================================================
+    PALLET INFORMATION
+================================= -->
+
+<div class="simulation-card">
+    <h2>🪵 Pallet Information</h2>
+    <div class="form-grid">
+
+
+        <!-- Pallet length -->
+        <div class="form-group">
+            <label for="palletLength">
+                Length (cm)
+            </label>
+
+            <input
+                type="number"
+                id="palletLength"
+                placeholder="Example: 120"
+                min="0"
+            >
+        </div>
+
+
+
+        <!-- Pallet width -->
+        <div class="form-group">
+            <label for="palletWidth">
+                Width (cm)
+            </label>
+
+
+            <input
+                type="number"
+                id="palletWidth"
+                placeholder="Example: 100"
+                min="0"
+            >
+        </div>
+
+
+
+        <!-- Physical pallet height -->
+        <div class="form-group">
+            <label for="palletHeight">
+                Pallet Height (cm)
+            </label>
+
+            <input
+                type="number"
+                id="palletHeight"
+                placeholder="Example: 15"
+                min="0"
+            >
+        </div>
+
+
+
+        <!-- Pallet weight -->
+        <div class="form-group">
+            <label for="palletWeight">
+                Pallet Weight (kg)
+            </label>
+
+            <input
+                type="number"
+                id="palletWeight"
+                placeholder="Example: 20"
+                step="0.01"
+                min="0"
+            >
+        </div>
+
+
+
+        <!-- Maximum load height -->
+        <div class="form-group">
+            <label for="palletMaxLoadHeight">
+                Maximum Load Height (cm)
+            </label>
+
+            <input
+                type="number"
+                id="palletMaxLoadHeight"
+                placeholder="Example: 150"
+                min="0"
+            >
+        </div>
+
+
+    </div>
+</div>
+                </div>
+                <!-- ========================================
+                    CALCULATE BUTTON
+                ========================================= -->
+                <div class="simulation-actions">
+                    <button
+                        type="button"
+                        class="btn-primary"
+                        id="calculateBtn"
+                    >
+                        Calculate Simulation
+                    </button>
+                </div>
+
+                <!-- ========================================
+                    SIMULATION RESULTS
+                ========================================= -->
+                <div
+                    class="simulation-results"
+                    id="simulationResults"
+                >
+                    <h2>Simulation Results</h2>
+                    <div class="results-grid">
+
+                        <!-- Boxes per layer -->
+                        <div class="result-card">
+                            <span>
+                                Boxes per Layer
+                            </span>
+                            <strong id="boxesPerLayer">
+                                -
+                            </strong>
+                        </div>
+
+                        <!-- Number of layers -->
+                        <div class="result-card">
+                            <span>
+                                Layers
+                            </span>
+                            <strong id="layers">
+                                -
+                            </strong>
+                        </div>
+                        <!-- Total boxes -->
+                        <div class="result-card">
+                            <span>
+                                Total Boxes
+                            </span>
+                            <strong id="totalBoxes">
+                                -
+                            </strong>
+                        </div>
+
+                        <!-- Total weight -->
+                        <div class="result-card">
+                            <span>
+                                Total Weight
+                            </span>
+                            <strong id="totalWeight">
+                                -
+                            </strong>
+
+                        <!-- Load length -->
+                        <div class="result-card">
+                            <span>
+                                Load Length
+                            </span>
+                            <strong id="loadLength">
+                                -
+                            </strong>
+                        </div>
+
+
+                        <!-- Load width -->
+                        <div class="result-card">
+                            <span>
+                                Load Width
+                            </span>
+                            <strong id="loadWidth">
+                                -
+                            </strong>
+                        </div>
+
+
+                        <!-- Load height -->
+                        <div class="result-card">
+                            <span>
+                                Load Height
+                            </span>
+                            <strong id="loadHeight">
+                                -
+                            </strong>
+                        </div>
+
+
+                        <!-- Total height -->
+                        <div class="result-card">
+                            <span>
+                                Total Height
+                            </span>
+                            <strong id="totalHeight">
+                                -
+                            </strong>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
-</body>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+
 </body>
 </html>

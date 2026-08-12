@@ -308,3 +308,148 @@ tbody tr:hover {
         overflow-x: auto;
     }
 }
+
+/* =============================================================================
+NEW SIMULATION
+======================================== */
+
+.simulation-page {
+    margin-top: 35px;
+}
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* Simulation cards */
+.simulation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.simulation-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+}
+
+.simulation-card h2 {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+
+/* Form */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.form-group input {
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* Button */
+.simulation-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+
+/* Results */
+.simulation-results {
+    margin-top: 30px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+}
+
+.simulation-results h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.result-card {
+    padding: 18px;
+    background-color: #f8fafc;
+    border-radius: 10px;
+}
+
+.result-card span {
+    display: block;
+    color: #64748b;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.result-card strong {
+    font-size: 24px;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .simulation-grid {
+        grid-template-columns: 1fr;
+    }
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
